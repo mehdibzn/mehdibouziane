@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>histoire</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+    <style>
+        @media (min-width: 1200px) {
+            body {
+                padding-left: 50px;
+                padding-right: 50px;
+
+            }
+        }
+
+
+        @media (min-width: 768px) and (max-width: 1199px) {
+            body {
+                padding-left: 30px;
+                padding-right: 30px;
+
+            }
+        }
+
+
+        @media (max-width: 767px) {
+            body {
+                padding-left: 20px;
+                padding-right: 20px;
+
+            }
+        }
+
+
+        @media (max-width: 480px) {
+            body {
+                padding-left: 5px;
+                padding-right: 5px;
+
+            }
+        }
+
+        body {
+            background-image: url('image2.png');
+            background-size: 100% 100%;
+            background-attachment: fixed;
+
+        }
+
+        #slider {
+            overflow: hidden;
+
+        }
+
+        #slider figure {
+            position: relative;
+            width: 500%;
+            margin: 00;
+            left: 0;
+            animation: 10s slider infinite;
+        }
+
+        #slider figure img {
+            float: left;
+            width: 20%;
+            height: 400px;
+
+        }
+
+        @keyframes slider {
+            0% {
+                left: 0;
+            }
+
+            20% {
+                left: 0;
+            }
+
+            25% {
+                left: -100%;
+            }
+
+            45% {
+                left: -100%;
+            }
+
+            50% {
+                left: -200%;
+            }
+
+            70% {
+                left: -200%;
+            }
+
+            75% {
+                left: -300;
+            }
+
+            95% {
+                left: -300;
+            }
+
+            100% {
+                left: -400;
+            }
+
+
+        }
+
+        nav {
+            background: #adeee3;
+            height: 70px;
+            width: 100%;
+            box-shadow: 0px 0px 5px #000;
+            border-bottom: 2px solid white;
+        }
+
+        nav ul {
+            float: center;
+            margin-right: 25px;
+
+        }
+
+        nav ul li {
+            display: inline-block;
+            line-height: 20px;
+            margin: 20px;
+            text-align: center;
+            align-content: center;
+            padding-left: 20px;
+        }
+
+        nav ul li a {
+            color: #303030;
+            font-size: 25px;
+            font-family: Montserrat, "sans-serif";
+            text-align: center;
+            text-decoration: none;
+
+
+        }
+
+        h1 {
+            font-family: Montserrat, "sans-serif";
+            display: flex;
+            justify-content: center;
+            color: #303030;
+        }
+
+        h2 {
+            font-family: Montserrat, "sans-serif";
+            color: #303030;
+            display: flex;
+            justify-content: left;
+        }
+
+        p {
+            line-height: 0, 5px;
+            border: white;
+            font-family: Montserrat, "sans-serif";
+            text-align: center;
+
+        }
+
+        img {
+            width: 100%;
+            height: 400px;
+
+        }
+
+        p {
+            line-height: 0, 5px;
+            border: white;
+            font-family: manrope;
+            font-size: 18px;
+
+
+
+        }
+
+        .column.row.row,
+        .row.row.columns {
+            float: none;
+            display: block;
+        }
+
+        .container-padded {
+            padding: 1rem 0;
+        }
+
+
+        .column,
+        .columns {
+            -webkit-flex: 1 1 0px;
+            -ms-flex: 1 1 0px;
+            flex: 1 1 0px;
+            padding-right: 0.625rem;
+            padding-left: 0.625rem;
+            min-width: initial;
+        }
+
+        .row {
+            max-width: 75rem;
+            margin-right: auto;
+            margin-left: auto;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-flow: row wrap;
+            -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+        }
+
+        .social-links {
+            background: #adeee3;
+            padding: 2rem 0 1rem;
+        }
+
+        .social-links a {
+            color: rgb(0, 0, 0);
+            font-size: 1.2rem;
+        }
+
+        .social-links i.fa {
+            font-size: 1.4rem;
+            padding-right: 0.8rem;
+            padding-bottom: 1rem;
+        }
+
+        @media screen and (max-width: 39.9375em) {
+            .social-links {
+                padding: 2rem 0;
+            }
+
+            .social-links i.fa {
+                font-size: 2rem;
+                display: block;
+                padding-right: 0;
+                padding-bottom: 0.5rem;
+            }
+
+            .social-links a {
+                font-weight: bold;
+            }
+
+            .social-links .columns {
+                margin: 1rem 0;
+            }
+
+            .social-links .mobile-stack {
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+            }
+        }
+
+        .audio-container {
+            width: 300px;
+            margin: 20px auto;
+            background-color: black;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+
+        audio {
+            width: 100%;
+            display: block;
+        }
+
+
+        audio::-webkit-media-controls-panel {
+            background-color: #adeee3;
+            color: black;
+            border-radius: 5px;
+        }
+
+        audio::-webkit-media-controls-play-button,
+        audio::-webkit-media-controls-pause-button,
+        audio::-webkit-media-controls-volume-slider {
+            background-color: #adeee3;
+            color: black;
+        }
+
+
+        audio::-webkit-media-controls-current-time-display,
+        audio::-webkit-media-controls-time-remaining-display,
+        audio::-webkit-media-controls-timeline,
+        audio::-webkit-media-controls-seek-back-button,
+        audio::-webkit-media-controls-seek-forward-button {
+            color: black;
+        }
+
+        .arrow-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 30px 0 0;
+
+            >* {
+                margin: 0 20px;
+            }
+        }
+
+        .arrow-down {
+            width: 50px;
+            height: 20px;
+            background-color: black;
+
+            clip-path: polygon(100% 0, 0 0, 50% 100%);
+        }
+
+        .div-Site {
+            position: -webkit-sticky;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Site" class="w3-center  w3-padding-16">
+        <center>
+            SUPPORTER PAR
+        </center>
+        <center><a href="#" class="fa fa-chrome"></a>
+            <a href="#" class="fa fa-firefox"></a>
+        </center>
+    </div>
+    <br>
+    <div id="slider">
+        <figure>
+            <img src="img/image.jpeg" alt="image" height="500" width="500">
+            <img src="img/image2.jpg" alt="image" height="500" width="500">
+            <img src="img/image3.jpeg" alt="image" height="500" width="500">
+            <img src="img/image4.jpg" alt="image" height="500" width="500">
+            <img src="img/image5.jpg" alt="image" height="500" width="500">
+
+
+        </figure>
+    </div>
+
+    <br>
+    <nav>
+        <ul>
+            <li><a href="index.html">ACCUEIL</a></li>
+            <li><a href="a visiter.html">À VISITER !</a></li>
+            <li><a href="his.html">HISTOIRE</a></li>
+            <li><a href="galerie.html">GALERIE</a></li>
+            <li><a href="map.html">MAP</a></li>
+            <li><a href="site.html">SITES D'INTÉRÊT</a></li>
+            <li><a href="PlanSite.html">PLAN DE SITE</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="FAQ.html">F.A.Q</a></li>
+        </ul>
+    </nav>
+    <h1>Histoire</h1>
+
+
+    <h2>Ville de Montréal, son histoire, son passé et son présent</h2>
+    <center>
+        <p style="text-align: left; color: black; ">Fondation de Montréal : Le site de la ville la plus importante du
+            Québec a été choisi avec beaucoup
+            d’à-propos. En effet, plantée au cœur du Saint-Laurent, elle est née de la forêt très dense d’une
+            île formée par le fleuve et la rivière des Prairies, avec pour toile de fond le mont Royal.
+
+            La situation constitue, en outre, une remarquable confluence de routes terrestres et de voies d’eau
+            en Amérique du Nord. Jacques Cartier fournit l’attestation la plus ancienne du nom de lieu Mont
+            Royal quand il écrit dans sa Relation de 1535-1536 : « En au parmi d’icelles champagnes est située
+            et assise la ville de Hochelaga près et joignant une montagne qui est alentour d’icelle labourée et
+            fort fertile de dessus laquelle on voit fort loin. Nous nommâmes icelle montagne le mont Royal. »
+
+            Dans sa Cosmographie universelle de 1575, André Thevet précise : « Ce fut en leur terre que les
+            François bâtirent. il y a longtemps, un fort, près d’une montagne qu’ils nommèrent Mont Royal. »</p>
+    </center>
+
+    <h2>Fondation de Montréal</h2>
+    <center>
+        <p style="text-align: left; color: black; ">C’est dans La Cosmographie universelle de toute le monde, également
+            produite en 1575, que François de
+            Belleforest affirme : « Laquelle ville les Chrétiens appelèrent Montréal. »
+
+            Le sieur Paul de Chomedey de Maisonneuve nomma l’établissement Ville-Marie lors de la cérémonie de
+            fondation, le 18 mai 1642. Le nom de lieu Ville de Montréal supplanta définitivement Ville-Marie au
+            début du XVIIIe siècle à plus de 3 millions de citoyens de nos jours, en tenant compte de toute la
+            conurbation montréalaise. Le père Vimont, supérieur des Jésuites au XVIIe siècle, avait vu juste
+            lorsqu’il écrivait : « ce que vous voyez ici n’est qu’un grain de sénevé, mais je ne doute nullement
+            que ce petit grain ne produise un grand arbre, qu’il ne fasse un jour des progrès merveilleux, ne se
+            multiplie et s’étende de toutes autres parts. »</p>
+    </center>
+    <h1>Pour Plus D'Histoire de Montréal</h1>
+    <center>
+        <div class="arrow-wrapper">
+            <div class="arrow-down"></div>
+        </div>
+    </center>
+    <br>
+    <center>
+        <div><audio controls>
+                <source src="MTL.mp3" type="audio/mp3">
+            </audio></div>
+    </center>
+    <hr>
+</body>
+<footer>
+    <div class="social-links">
+        <div class="row">
+            <div class="small-6 medium-3 columns text-center mobile-stack">
+                <a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a>
+            </div>
+            <div class="small-6 medium-3 columns text-center mobile-stack">
+                <a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram"
+                        aria-hidden="true"></i>Instagram</a>
+            </div>
+            <div class="small-6 medium-3 columns text-center mobile-stack">
+                <a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p" aria-hidden="true"></i>Pinterest</a>
+            </div>
+            <div class="small-6 medium-3 columns text-center mobile-stack">
+                <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>

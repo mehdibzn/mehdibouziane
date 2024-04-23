@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Contacte</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+	<style>
+		@media (min-width: 1200px) {
+			body {
+				padding-left: 50px;
+				padding-right: 50px;
+
+			}
+		}
+
+
+		@media (min-width: 768px) and (max-width: 1199px) {
+			body {
+				padding-left: 30px;
+				padding-right: 30px;
+
+			}
+		}
+
+
+		@media (max-width: 767px) {
+			body {
+				padding-left: 20px;
+				padding-right: 20px;
+
+			}
+		}
+
+
+		@media (max-width: 480px) {
+			body {
+				padding-left: 5px;
+				padding-right: 5px;
+
+			}
+		}
+
+		body {
+			background-image: url('image2.png');
+			background-size: 100% 100%;
+			background-attachment: fixed;
+
+		}
+
+
+		#slider {
+			overflow: hidden;
+			margin-right: auto;
+			margin-left: auto;
+
+
+		}
+
+		#slider figure {
+			position: relative;
+			width: 500%;
+			margin: 00;
+			left: 0;
+			animation: 10s slider infinite;
+		}
+
+		#slider figure img {
+			float: left;
+			width: 20%;
+			height: 400px;
+
+		}
+
+		@keyframes slider {
+			0% {
+				left: 0;
+			}
+
+			20% {
+				left: 0;
+			}
+
+			25% {
+				left: -100%;
+			}
+
+			45% {
+				left: -100%;
+			}
+
+			50% {
+				left: -200%;
+			}
+
+			70% {
+				left: -200%;
+			}
+
+			75% {
+				left: -300;
+			}
+
+			95% {
+				left: -300;
+			}
+
+			100% {
+				left: -400;
+			}
+
+
+		}
+
+		nav {
+			background: #adeee3;
+			height: 70px;
+			width: 100%;
+			box-shadow: 0px 0px 5px #000;
+			border-bottom: 2px solid white;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+		}
+
+
+		nav ul {
+			float: center;
+			margin-right: 25px;
+
+		}
+
+		nav ul li {
+			display: inline-block;
+			line-height: 20px;
+			margin: 20px;
+			text-align: center;
+			align-content: center;
+			padding-left: 20px;
+		}
+
+		nav ul li a {
+			color: #303030;
+			font-size: 25px;
+			font-family: Montserrat, "sans-serif";
+			text-align: center;
+			text-decoration: none;
+
+
+		}
+
+		h1 {
+			font-family: Montserrat, "sans-serif";
+			display: flex;
+			justify-content: center;
+			color: #303030;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		.container {
+
+			margin: auto;
+			background: transparent;
+			overflow: auto;
+			border-radius: 5px;
+			width: 50%;
+			box-sizing: border-box;
+		}
+
+		.con2 {
+			display: flex;
+		}
+
+		.gallery {
+			margin: 5px;
+			border: 1px solid #ccc;
+			float: center;
+			width: 95%;
+			height: 100%;
+			border-radius: 5px;
+		}
+
+		.gallery img {
+			width: 100%;
+			height: 190px;
+			border-radius: 5px;
+		}
+
+		.desc {
+			padding: 15px;
+			text-align: center;
+			font-family: Montserrat, "sans-serif";
+		}
+
+		.desc a {
+			text-decoration: none;
+		}
+
+		.column.row.row,
+		.row.row.columns {
+			float: none;
+			display: block;
+		}
+
+		.container-padded {
+			padding: 1rem 0;
+		}
+
+
+		.column,
+		.columns {
+			-webkit-flex: 1 1 0px;
+			-ms-flex: 1 1 0px;
+			flex: 1 1 0px;
+			padding-right: 0.625rem;
+			padding-left: 0.625rem;
+			min-width: initial;
+		}
+
+		.row {
+			max-width: 75rem;
+			margin-right: auto;
+			margin-left: auto;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-flex-flow: row wrap;
+			-ms-flex-flow: row wrap;
+			flex-flow: row wrap;
+		}
+
+		.social-links {
+			background: #adeee3;
+			padding: 2rem 0 1rem;
+		}
+
+		.social-links a {
+			color: rgb(0, 0, 0);
+			font-size: 1.2rem;
+		}
+
+		.social-links i.fa {
+			font-size: 1.4rem;
+			padding-right: 0.8rem;
+			padding-bottom: 1rem;
+		}
+
+		@media screen and (max-width: 39.9375em) {
+			.social-links {
+				padding: 2rem 0;
+			}
+
+			.social-links i.fa {
+				font-size: 2rem;
+				display: block;
+				padding-right: 0;
+				padding-bottom: 0.5rem;
+			}
+
+			.social-links a {
+				font-weight: bold;
+			}
+
+			.social-links .columns {
+				margin: 1rem 0;
+			}
+
+			.social-links .mobile-stack {
+				display: -webkit-flex;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-flex-direction: column;
+				-ms-flex-direction: column;
+				flex-direction: column;
+			}
+		}
+
+		.contactez-nous {
+			width: 700px;
+			border: 1px solid;
+			border-radius: 8px;
+			padding: 0 10px 0 30px;
+			background-image: rgba(0, 0, 0, 0.5);
+			margin-left: auto;
+			margin-right: auto;
+
+
+		}
+
+		.contactez-nous>h1 {
+			font-weight: 500;
+		}
+
+		.contactez-nous>p {
+			font-weight: 300;
+		}
+
+		form div {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			min-height: 23px;
+			margin-top: 15px;
+		}
+
+		form div>label {
+			margin-bottom: 7px;
+			font-weight: 600;
+		}
+
+		form div>input,
+		form div>select,
+		form div>textarea {
+			background: #adeee3;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			font-weight: 500;
+			font-family: Montserrat, "sans-serif";
+			box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+		}
+
+		form div>input,
+		form div>select {
+			height: 50px;
+			padding-left: 10px;
+		}
+
+		form div>select {
+			appearance: none;
+			background-size: 15px;
+			background-position: right 10px top 50%;
+			background-repeat: no-repeat;
+		}
+
+		form div>textarea {
+			height: 195px;
+			padding: 15px 0px 0px 10px;
+		}
+
+		form div>input::placeholder,
+		form div>textarea::placeholder {
+			color: white;
+		}
+
+		form div>select:invalid {
+			color: white;
+		}
+
+		form div>select option {
+			background: white;
+			color: #303030;
+		}
+
+		form div:last-child {
+			align-items: center;
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+
+		form button {
+			width: 350px;
+			max-width: 300px;
+			height: 50px;
+			font-weight: 600;
+			font-size: 20px;
+			background: white;
+			border: rgba(40, 40, 40, 0.4) solid 1px;
+			border-radius: 3px;
+			box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+			color: #303030;
+		}
+
+		.div-Site {
+			position: -webkit-sticky;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="Site" class="w3-center  w3-padding-16">
+		<center>
+			SUPPORTER PAR
+		</center>
+		<center><a href="#" class="fa fa-chrome"></a>
+			<a href="#" class="fa fa-firefox"></a>
+		</center>
+	</div>
+	<br>
+	<div id="slider">
+		<figure>
+			<img src="img/image.jpeg" alt="image" height="500" width="500">
+			<img src="img/image2.jpg" alt="image" height="500" width="500">
+			<img src="img/image3.jpeg" alt="image" height="500" width="500">
+			<img src="img/image4.jpg" alt="image" height="500" width="500">
+			<img src="img/image5.jpg" alt="image" height="500" width="500">
+
+
+		</figure>
+	</div>
+	<br>
+	<nav>
+		<ul>
+			<li><a href="index.html">ACCUEIL</a></li>
+			<li><a href="a visiter.html">À VISITER !</a></li>
+			<li><a href="his.html">HISTOIRE</a></li>
+			<li><a href="galerie.html">GALERIE</a></li>
+			<li><a href="map.html">MAP</a></li>
+			<li><a href="site.html">SITES D'INTÉRÊT</a></li>
+			<li><a href="PlanSite.html">PLAN DE SITE</a></li>
+			<li><a href="contact.html">CONTACT</a></li>
+			<li><a href="FAQ.html">F.A.Q</a></li>
+		</ul>
+	</nav>
+	<hr>
+	<div class="contactez-nous">
+		<h1>Contactez-nous</h1>
+		<p>Un problème, une question, envie de nous envoyer un message ? N’hésitez pas à utiliser ce formulaire pour
+			prendre contact avec nous !</p>
+		<form action="/page-traitement-donnees" method="post">
+			<div>
+				<label for="nom">Votre nom</label>
+				<input type="text" id="nom" name="nom" placeholder="Mehdi" required>
+			</div>
+			<div>
+				<label for="email">Votre e-mail</label>
+				<input type="email" id="email" name="email" placeholder="mehdibzn@live.com" required>
+			</div>
+			<div>
+				<label for="sujet">Votre numéro de téléphone</label>
+				<input type="sujet" name="sujet" placeholder="+1 (514).....">
+				<label for="Votre site web">Le lien de votre site</label>
+				<input type="site" name="site" placeholder="WWW.#####.COM">
+			</div>
+			<div>
+				<label for="message">Votre message</label>
+				<textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...."
+					required></textarea>
+			</div>
+			<div>
+				<button type="submit">Envoyer mon message</button>
+			</div>
+		</form>
+	</div>
+	<hr>
+
+</body>
+<footer>
+	<div class="social-links">
+		<div class="row">
+			<div class="small-6 medium-3 columns text-center mobile-stack">
+				<a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a>
+			</div>
+			<div class="small-6 medium-3 columns text-center mobile-stack">
+				<a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram"
+						aria-hidden="true"></i>Instagram</a>
+			</div>
+			<div class="small-6 medium-3 columns text-center mobile-stack">
+				<a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p" aria-hidden="true"></i>Pinterest</a>
+			</div>
+			<div class="small-6 medium-3 columns text-center mobile-stack">
+				<a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a>
+			</div>
+		</div>
+	</div>
+</footer>
+
+</html>
